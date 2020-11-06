@@ -1,0 +1,14 @@
+<hr>
+<button 
+class ="btn btn-primary"
+(click)="onCreateServer()">Add server</button>
+<hr>
+<p *ngIf="serverCreated"> {{ serverCreationStatus }} </p>
+<hr>
+
+
+<button class= "btn btn-primary" 
+(click) = "onChangeServerName()"
+>Change server name</button>
+<p *ngIf = "changeName"> The server name is {{ serverName }}</p>
+
